@@ -15,18 +15,18 @@
                 imgIDs.forEach(function(imgID) {
                     $(imgID).click(function() {
                         var origSrc = $(this).attr('src');
-                        $(this).attr('src', $(this).attr('alt-src'));
-                        $(this).attr('alt-src', origSrc);
+                        $(this).attr('src', $(this).attr('data-alt-src'));
+                        $(this).attr('data-alt-src', origSrc);
                     });
                 });
             });
         </script>
     </head>
     <body>
-        <img src="img/cat0.png" alt-src="img/ninja0.png" id="img0">
-        <img src="img/ninja1.png" alt-src="img/cat1.png" id="img1">
-        <img src="img/cat2.png" alt-src="img/ninja2.png" id="img2">
-        <img src="img/ninja3.png" alt-src="img/cat3.png" id="img3">
-        <img src="img/cat4.png" alt-src="img/ninja4.png" id="img4">
+        <img src="img/cat0.png" data-alt-src="img/ninja0.png" alt="img" id="img0">
+        <img src="img/ninja1.png" data-alt-src="img/cat1.png" alt="img" id="img1">
+        <img src="img/cat2.png" data-alt-src="img/ninja2.png" alt="img" id="img2">
+        <img src="img/ninja3.png" data-alt-src="img/cat3.png" alt="img" id="img3">
+        <img src="img/cat4.png" data-alt-src="img/ninja4.png" alt="img" id="img4">
     </body>
 </html>
